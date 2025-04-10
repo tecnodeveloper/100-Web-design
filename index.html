@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Componenet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /*
+
+        1- First you should write all html code of your website then do designing
+
+         Spacing system(px)
+            2 / 4 / 8 / 12 /16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            Font size system (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+            Main color : #087f5b
+            Grey color : #343a40
+        
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            line-height: 1;
+        }
+
+        .accordions {
+            width: 700px;
+            margin: 100px auto;
+        }
+
+        .headerline {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .number,
+        .headtext {
+            color: #087f5b;
+            font-weight: 600;
+        }
+
+        .headtext {}
+
+        .icon {
+            stroke: #087f5b;
+            width: 24px;
+            height: 24px;
+        }
+
+        .accordiontext {
+            margin-bottom: 24px;
+        }
+
+        ul li {
+            margin-left: 18px;
+            color: #868e96;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accordions">
+        <div class="headerline">
+            <div class="number">02</div>
+            <div class="headtext">How long do I have to return my chair?</div>
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+        </div>
+        <div class="accordiontext">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto culpa facere consequuntur eveniet soluta?
+            Quas
+            uae quisquam iure amet provident, nemo, cum labore eaque delectus itaque doloremque nobis, aperiam
+
+        </div>
+        <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus hic tenetur placeat
+            </li>
+            <li>autem! Reiciendis asperiores id itaque doloremque nulla recusandae, dolor </li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate ad quod</li>
+            <li>quaerat repellendus vero aliquam! Harum unde officiis corporis.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
