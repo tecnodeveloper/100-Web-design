@@ -56,14 +56,30 @@
             box-shadow: 0px 0 32px rgba(0, 0, 0, 0.1);
         }
 
-        .number {
-            color: #868e96;
+        .changecolor1 {
+            color: #868e9671 !important;
+        }
+
+        .box2 {
+
+            border-top: 8px solid #087f5b;
+        }
+
+        .changecolor2 {
+            color: #343a40 !important;
+        }
+
+
+
+        .number,
+        .headtext {
+            color: #087f5b;
+            font-weight: 600;
+            font-size: 18px;
+            justify-self: center;
         }
 
         .headtext {
-            color: #343a40;
-            font-weight: 600;
-            font-size: 18px;
             justify-self: start;
         }
 
@@ -71,14 +87,14 @@
             stroke: #087f5b;
             width: 24px;
             height: 24px;
+            justify-self: start;
         }
 
         .accordiontext {
             grid-column: 2;
-            display: none;
         }
 
-        .text {
+        .text-class {
             margin-bottom: 24px;
         }
 
@@ -89,33 +105,29 @@
             flex-direction: column;
             gap: 8px;
         }
-
-        .open .accordiontext {
-            display: block;
-        }
-
-        .open {
-            border-top: 8px solid #087f5b;
-        }
-
-        .open .number,
-        .open .headtext {
-            color: #087f5b;
-        }
     </style>
 </head>
 
 <body>
     <div class="accordion">
         <div class="box1">
-            <div class="number">01</div>
-            <div class="headtext">Where are these chairs assembled?</div>
+            <div class="number changecolor1">01</div>
+            <div class="headtext changecolor2">Where are these chairs assembled?</div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+        </div>
+
+        <div class="box2">
+            <div class="number">02</div>
+            <div class="headtext">How long do I have to return my chair?</div>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
             </svg>
             <div class="accordiontext">
-                <div class="text">
+                <div class="text-class">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto culpa facere consequuntur
                     eveniet soluta? Quasuae quisquam iure amet provident, nemo, cum labore eaque delectus ita doloremq
                     nobis, aperiam
@@ -129,52 +141,16 @@
             </div>
         </div>
 
-        <div class="box2 open">
-            <div class="number">02</div>
-            <div class="headtext">How long do I have to return my chair?</div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
-            <div class="accordiontext">
-                <div class="text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto culpa facere consequuntur
-                    eveniet soluta? Quasuae quisquam iure amet provident, nemo, cum labore eaque delectus ita
-                    doloremq
-                    nobis, aperiam
-                </div>
-                <ul>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </li>
-                    <li>autem! Reiciendis asperiores id itaque doloremque nulla recusandae, dolor </li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate ad quod</li>
-                    <li>quaerat repellendus vero aliquam! Harum unde officiis corporis.</li>
-                </ul>
-            </div>
-        </div>
+
 
         <div class="box3">
-            <div class="number">03</div>
-            <div class="headtext">Do you ship to countries outside EU?</div>
+            <div class="number changecolor1">03</div>
+            <div class="headtext changecolor2">Do you ship to countries outside EU?</div>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
             </svg>
-            <div class="accordiontext">
-                <div class="text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto culpa facere consequuntur
-                    eveniet soluta? Quasuae quisquam iure amet provident, nemo, cum labore eaque delectus ita
-                    doloremq
-                    nobis, aperiam
-                </div>
-                <ul>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </li>
-                    <li>autem! Reiciendis asperiores id itaque doloremque nulla recusandae, dolor </li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate ad quod</li>
-                    <li>quaerat repellendus vero aliquam! Harum unde officiis corporis.</li>
-                </ul>
-            </div>
         </div>
-
     </div>
 </body>
 
