@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accordion Componenet</title>
+    <title>Carousel Componenet</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,9 +13,7 @@
 
     <style>
         /*
-
         1- First you should write all html code of your website then do designing
-
         Spacing system(px)
             2 / 4 / 8 / 12 /16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
@@ -33,123 +31,68 @@
 
         body {
             font-family: "Inter", sans-serif;
+            color: #fff;
             line-height: 1;
         }
 
-        .accordion {
-            width: 700px;
-            margin: 50px auto;
+        .carousel {
+            width: 800px;
+            margin: 100px auto;
+            background-color: #087f5b;
+            border-radius: 8px;
             display: flex;
-            flex-direction: column;
-            gap: 24px;
+            gap: 12px;
+            padding: 32px;
         }
 
-        .box1,
-        .box2,
-        .box3 {
-            display: grid;
-            grid-template-columns: auto 1fr auto;
-            column-gap: 24px;
-            row-gap: 22px;
-            padding: 18px;
-            align-items: center;
-            box-shadow: 0px 0 32px rgba(0, 0, 0, 0.1);
+        img {
+            width: 200px;
+            border-radius: 8px;
         }
 
-        .changecolor1 {
-            color: #868e9671 !important;
+        .testmonial {}
+
+        .testmonial-aurthor {
+            color: #96f2d7
         }
 
-        .box2 {
-
-            border-top: 8px solid #087f5b;
-        }
-
-        .changecolor2 {
-            color: #343a40 !important;
-        }
-
-
-
-        .number,
-        .headtext {
-            color: #087f5b;
-            font-weight: 600;
-            font-size: 18px;
-            justify-self: center;
-        }
-
-        .headtext {
-            justify-self: start;
+        .testmonial-job {
+            color: #c3fae8;
         }
 
         .icon {
-            stroke: #087f5b;
             width: 24px;
             height: 24px;
-            justify-self: start;
-        }
-
-        .accordiontext {
-            grid-column: 2;
-        }
-
-        .text-class {
-            margin-bottom: 24px;
-        }
-
-        ul {
-            margin-left: 18px;
-            color: #868e96;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
         }
     </style>
 </head>
 
 <body>
-    <div class="accordion">
-        <div class="box1">
-            <div class="number changecolor1">01</div>
-            <div class="headtext changecolor2">Where are these chairs assembled?</div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
+    <div class="carousel">
+        <img src="/03-CarouselComponent Design/img/maria.jpg" alt="Maria Photo">
+        <blockquote class="testmonial">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quibusdam iure tempora delectus, harum non
+            animi corporis labore voluptate enim, itaque cum laborum nam.
+        </blockquote>
+        <div class="testmonial-aurthor">
+            Maria Di capria
         </div>
-
-        <div class="box2">
-            <div class="number">02</div>
-            <div class="headtext">How long do I have to return my chair?</div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
-            <div class="accordiontext">
-                <div class="text-class">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto culpa facere consequuntur
-                    eveniet soluta? Quasuae quisquam iure amet provident, nemo, cum labore eaque delectus ita doloremq
-                    nobis, aperiam
-                </div>
-                <ul>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </li>
-                    <li>autem! Reiciendis asperiores id itaque doloremque nulla recusandae, dolor </li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate ad quod</li>
-                    <li>quaerat repellendus vero aliquam! Harum unde officiis corporis.</li>
-                </ul>
-            </div>
+        <div class="testmonial-job">
+            Senior Software Engineer at University
         </div>
-
-
-
-        <div class="box3">
-            <div class="number changecolor1">03</div>
-            <div class="headtext changecolor2">Do you ship to countries outside EU?</div>
+        <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
+
+        </div>
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+
         </div>
     </div>
 </body>
