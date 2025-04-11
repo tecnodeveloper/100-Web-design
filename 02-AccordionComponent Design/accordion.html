@@ -16,15 +16,14 @@
 
         1- First you should write all html code of your website then do designing
 
-         Spacing system(px)
+        Spacing system(px)
             2 / 4 / 8 / 12 /16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
-            Font size system (px)
+        Font size system (px)
             10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
             Main color : #087f5b
             Grey color : #343a40
-        
         */
         * {
             margin: 0;
@@ -35,7 +34,6 @@
         body {
             font-family: "Inter", sans-serif;
             line-height: 1;
-            background-color: #868e961a;
         }
 
         .accordion {
@@ -49,29 +47,35 @@
         .box1,
         .box2,
         .box3 {
-            box-shadow: 0px 20px 20px #868e962f;
-            background-color: #fff;
-            padding-bottom: 16px;
-        }
-
-        .box1 {
-            border: none !important;
-        }
-
-        .headerline {
             display: grid;
-            grid-template-columns: 40px 2fr 52px;
-            /* margin-bottom: 20px; */
-            border-top: 8px solid #087f5b;
-            padding-top: 18px;
+            grid-template-columns: auto 1fr auto;
+            column-gap: 24px;
+            row-gap: 22px;
+            padding: 18px;
+            align-items: center;
+            box-shadow: 0px 0 32px rgba(0, 0, 0, 0.1);
         }
+
+        .changecolor1 {
+            color: #868e9671 !important;
+        }
+
+        .box2 {
+
+            border-top: 8px solid #087f5b;
+        }
+
+        .changecolor2 {
+            color: #343a40 !important;
+        }
+
+
 
         .number,
         .headtext {
             color: #087f5b;
             font-weight: 600;
             font-size: 18px;
-            /* padding-left: 12px; */
             justify-self: center;
         }
 
@@ -87,7 +91,7 @@
         }
 
         .accordiontext {
-            padding: 20px 40px;
+            grid-column: 2;
         }
 
         .text-class {
@@ -107,34 +111,26 @@
 <body>
     <div class="accordion">
         <div class="box1">
-            <div class="headerline">
-                <div class="number changecolor">01</div>
-                <div class="headtext">Where are these chairs assembled?</div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-            </div>
+            <div class="number changecolor1">01</div>
+            <div class="headtext changecolor2">Where are these chairs assembled?</div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
         </div>
 
-
-
         <div class="box2">
-            <div class="headerline">
-                <div class="number">02</div>
-                <div class="headtext">How long do I have to return my chair?</div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-            </div>
+            <div class="number">02</div>
+            <div class="headtext">How long do I have to return my chair?</div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
             <div class="accordiontext">
                 <div class="text-class">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto culpa facere consequuntur
-                    eveniet
-                    soluta?
-                    Quasuae quisquam iure amet provident, nemo, cum labore eaque delectus itaque doloremque nobis,
-                    aperiam
+                    eveniet soluta? Quasuae quisquam iure amet provident, nemo, cum labore eaque delectus ita doloremq
+                    nobis, aperiam
                 </div>
                 <ul>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus hic tenetur placeat </li>
@@ -148,14 +144,12 @@
 
 
         <div class="box3">
-            <div class="headerline">
-                <div class="number">03</div>
-                <div class="headtext">How long do I have to return my chair?</div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-            </div>
+            <div class="number changecolor1">03</div>
+            <div class="headtext changecolor2">Do you ship to countries outside EU?</div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
         </div>
     </div>
 </body>
