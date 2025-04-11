@@ -35,67 +35,128 @@
         body {
             font-family: "Inter", sans-serif;
             line-height: 1;
+            background-color: #868e961a;
         }
 
-        .accordions {
+        .accordion {
             width: 700px;
-            margin: 100px auto;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            box-shadow: 0px 20px 20px #868e962f;
+            background-color: #fff;
+            padding-bottom: 16px;
+        }
+
+        .box1 {
+            border: none !important;
         }
 
         .headerline {
-            display: flex;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: 40px 2fr 52px;
+            /* margin-bottom: 20px; */
+            border-top: 8px solid #087f5b;
+            padding-top: 18px;
         }
 
         .number,
         .headtext {
             color: #087f5b;
             font-weight: 600;
+            font-size: 18px;
+            /* padding-left: 12px; */
+            justify-self: center;
         }
 
-        .headtext {}
+        .headtext {
+            justify-self: start;
+        }
 
         .icon {
             stroke: #087f5b;
             width: 24px;
             height: 24px;
+            justify-self: start;
         }
 
         .accordiontext {
+            padding: 20px 40px;
+        }
+
+        .text-class {
             margin-bottom: 24px;
         }
 
-        ul li {
+        ul {
             margin-left: 18px;
             color: #868e96;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
     </style>
 </head>
 
 <body>
-    <div class="accordions">
-        <div class="headerline">
-            <div class="number">02</div>
-            <div class="headtext">How long do I have to return my chair?</div>
-            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
+    <div class="accordion">
+        <div class="box1">
+            <div class="headerline">
+                <div class="number changecolor">01</div>
+                <div class="headtext">Where are these chairs assembled?</div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
             </div>
         </div>
-        <div class="accordiontext">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto culpa facere consequuntur eveniet soluta?
-            Quas
-            uae quisquam iure amet provident, nemo, cum labore eaque delectus itaque doloremque nobis, aperiam
 
+
+
+        <div class="box2">
+            <div class="headerline">
+                <div class="number">02</div>
+                <div class="headtext">How long do I have to return my chair?</div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+            <div class="accordiontext">
+                <div class="text-class">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto culpa facere consequuntur
+                    eveniet
+                    soluta?
+                    Quasuae quisquam iure amet provident, nemo, cum labore eaque delectus itaque doloremque nobis,
+                    aperiam
+                </div>
+                <ul>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus hic tenetur placeat </li>
+                    <li>autem! Reiciendis asperiores id itaque doloremque nulla recusandae, dolor </li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate ad quod</li>
+                    <li>quaerat repellendus vero aliquam! Harum unde officiis corporis.</li>
+                </ul>
+            </div>
         </div>
-        <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus hic tenetur placeat
-            </li>
-            <li>autem! Reiciendis asperiores id itaque doloremque nulla recusandae, dolor </li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate ad quod</li>
-            <li>quaerat repellendus vero aliquam! Harum unde officiis corporis.</li>
-        </ul>
+
+
+
+        <div class="box3">
+            <div class="headerline">
+                <div class="number">03</div>
+                <div class="headtext">How long do I have to return my chair?</div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+        </div>
     </div>
 </body>
 
