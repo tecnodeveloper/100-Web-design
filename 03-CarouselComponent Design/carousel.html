@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carousel Componenet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-        /*
+      /*
         1- First you should write all html code of your website then do designing
         Spacing system(px)
             2 / 4 / 8 / 12 /16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -23,84 +23,125 @@
             Main color : #087f5b
             Grey color : #343a40
         */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: "Inter", sans-serif;
-            color: #fff;
-            line-height: 1;
-        }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #fff;
+        line-height: 1;
+      }
 
-        .carousel {
-            width: 800px;
-            margin: 100px auto;
-            background-color: #087f5b;
-            border-radius: 8px;
-            display: flex;
-            gap: 12px;
-            padding: 32px;
-        }
+      .carousel {
+        width: 800px;
+        margin: 100px auto;
+        background-color: #087f5b;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        gap: 86px;
+        padding: 32px;
+        position: relative;
+      }
 
-        img {
-            width: 200px;
-            border-radius: 8px;
-            transform: scale(1.5);
-            padding: 24px;
-            padding-left: 86;
-        }
+      img {
+        width: 200px;
+        border-radius: 12px;
+        transform: scale(1.5);
+        /* padding: 32px; */
+        padding-left: 34px;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.25);
+      }
+      .text {
+        line-height: 1.5;
+        margin-bottom: 24px;
+      }
 
-        .testmonial {}
+      .testmonial-aurthor {
+        color: #c3fae8;
+        margin-bottom: 4px;
+      }
 
-        .testmonial-aurthor {
-            color: #96f2d7
-        }
-
-        .testmonial-job {
-            color: #c3fae8;
-        }
-
-        .icon {
-            width: 24px;
-            height: 24px;
-        }
+      .testmonial-job {
+        color: #c3fae8;
+        font-size: 12px;
+      }
+      /* Controls button  */
+      .btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+      }
+      .btn--left {
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+      .btn--right {
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+        stroke: #087f5b;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="carousel">
-        <img src="/03-CarouselComponent Design/img/maria.jpg" alt="Maria Photo">
-        <div class="classdiv">
-            <blockquote class="testmonial">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quibusdam iure tempora delectus, harum
-                non
-                animi corporis labore voluptate enim, itaque cum laborum nam.
-            </blockquote>
-            <div class="testmonial-aurthor">
-                Maria Di capria
-            </div>
-            <div class="testmonial-job">
-                Senior Software Engineer at University
-            </div>
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                </svg>
+      <img src="/03-CarouselComponent Design/img/maria.jpg" alt="Maria Photo" />
 
-            </div>
-        </div>
-        <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-            </svg>
-
-        </div>
+      <blockquote class="testmonial">
+        <p class="text">
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+          quibusdam iure tempora delectus, harum non animi corporis labore
+          voluptate enim, itaque laborum nam."
+        </p>
+        <div class="testmonial-aurthor">Maria Di capria</div>
+        <div class="testmonial-job">Senior Software Engineer at University</div>
+      </blockquote>
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
     </div>
-</body>
-
+  </body>
 </html>
