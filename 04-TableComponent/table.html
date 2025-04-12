@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>template Componenet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Componenet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-        /*
+      /*
         1- First you should write all html code of your website then do designing
         Spacing system(px)
             2 / 4 / 8 / 12 /16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -23,22 +23,82 @@
             Main color : #087f5b
             Grey color : #343a40
         */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: "Inter", sans-serif;
-            color: #343a40;
-            line-height: 1;
-        }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+      }
+      table {
+        width: 800px;
+        border-collapse: collapse;
+        margin-top: 100px;
+      }
+      th,
+      td {
+        padding: 16px 24px;
+        text-align: left;
+      }
+      thead th {
+        background-color: #087f5b;
+        color: #fff;
+        padding: 12px;
+      }
+      thead tr {
+        width: 25%;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #e9ecef;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
-</body>
-
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Chair</th>
+          <th>The laid Back</th>
+          <th>The Worker Bee</th>
+          <th>The Chair 4/2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Width</th>
+          <td>80 cm</td>
+          <td>60 cm</td>
+          <td>220 cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>100 cm</td>
+          <td>110 cm</td>
+          <td>90 cm</td>
+        </tr>
+        <tr>
+          <th>Depth</th>
+          <td>70 cm</td>
+          <td>65 cm</td>
+          <td>80 cm</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>16 kg</td>
+          <td>22 kg</td>
+          <td>80 kg</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
