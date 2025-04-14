@@ -3,7 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hero Layout</title>
+    <title>Hero Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Global reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Rubik", sans-serif;
+        color: #444;
+      }
+      .container {
+        line-height: 1.05;
+        margin: 0 auto;
+        width: 1200px;
+      }
+      header {
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(15, 15, 15, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(/06-HeroSection\ Design/img/hero.jpg);
+        background-size: cover;
+        color: #fff;
+      }
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .header-inner {
+        width: 50%;
+        line-height: 1.05;
+      }
+      nav {
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 42px;
+      }
+      h1 {
+        font-size: 52px;
+        margin: 86px 0 42px 0;
+      }
+      p {
+        font-size: 20px;
+        margin: 42px 0 66px 0;
+      }
+      h2 {
+        font-size: 44px;
+        /* margin: 42px 0 42px 0; */
+      }
+      section {
+        margin-top: 42px;
+      }
+      .btn:link,
+      .btn:visited {
+        display: inline-block;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        background-color: #e8590c;
+        color: #fff;
+        padding: 16px 32px;
+        border-radius: 10px;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div>LOGO</div>
+          <div>NAVIGATION</div>
+        </nav>
+        <div class="header-container">
+          <div class="header-inner">
+            <h1>A healthy meal delivered to your door, every single day</h1>
+            <p>
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs
+            </p>
+            <a href="#" class="btn"> Start eating well </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Another random heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error
+          culpa adipisci odit! Sed illum beatae maxime, expedita dolore a. Culpa
+          maxime voluptate atque, reiciendis nobis et enim ipsum? Quaerat?Lorem
+          ipsum dolor sit, amet consectetur adipisicing elit. Laborum aliquid
+          officia perspiciatis nobis dolorum ex omnis iusto iure maiores, quia
+          similique tenetur saepe dolor possimus libero aliquam. Animi, nemo
+          quam.
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
