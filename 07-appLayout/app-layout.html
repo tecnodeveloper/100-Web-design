@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        color: #343a40;
+        font-size: 24px;
+        height: 100vh;
+        text-align: center;
+        font-weight: bold;
+
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+      }
+      nav {
+        background-color: #343a40;
+        color: #fff;
+        grid-row-start: 1;
+        grid-row-end: -1;
+      }
+      menu {
+        background-color: #845ef7;
+        color: #fff;
+        grid-column-start: 2;
+        grid-column-end: -1;
+      }
+      section {
+        background-color: #e9ecef;
+      }
+      aside {
+        background-color: #e9ecef;
+      }
+      .menu-container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+      /* .btn:link, */
+      .btn a:link,
+      .btn a:visited {
+        background-color: #5f3dc4;
+        color: #fff;
+        padding: 6px 12px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .btn-red a:link,
+      .btn-red a:visited {
+        background-color: #e03131 !important;
+      }
+      .inbox-container {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+        height: 100%;
+        overflow: scroll;
+      }
+      .emails {
+        height: 120px;
+        width: 300px;
+        background-color: #ced4da;
+        display: inline-block;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+      }
+
+      nav,
+      menu,
+      section,
+      aside,
+      main {
+        padding-top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu class="menu-container">
+      <div class="btn">
+        <a href="#">New</a>
+        <a href="#">Reply</a>
+        <a href="#">Forward</a>
+        <a href="#">Mark unread</a>
+      </div>
+      <div class="btn btn-red">
+        <a href="#">Trash</a>
+      </div>
+    </menu>
+    <section class="inbox-container">
+      <div class="emails">Email 1</div>
+      <div class="emails">Email 2</div>
+      <div class="emails">Email 3</div>
+      <div class="emails">Email 4</div>
+      <div class="emails">Email 5</div>
+      <div class="emails">Email 6</div>
+      <div class="emails">Email 7</div>
+      <div class="emails">Email 8</div>
+      <div class="emails">Email 9</div>
+      <div class="emails">Email 10</div>
+      <div class="emails">Email 11</div>
+      <div class="emails">Email 12</div>
+      <div class="emails">Email 12</div>
+      <div class="emails">Email 12</div>
+      <div class="emails">Email 12</div>
+      <div class="emails">Email 12</div>
+      <div class="emails">Email 12</div>
+      <div class="emails">Email 12</div>
+      <div class="emails">Email 12</div>
+      <div class="emails">Email 12</div>
+      <div class="emails">Email 12</div>
+    </section>
+    <main>Email view</main>
+    <aside>Additional Info</aside>
+  </body>
+</html>
