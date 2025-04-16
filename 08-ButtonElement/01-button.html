@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons Element</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Noto Sans", "Times New Roman";
+        display: flex;
+      }
+      .container {
+        width: 800px;
+        margin: 0 auto;
+      }
+      .btn {
+        height: 90px;
+        width: 340px;
+        color: #fff;
+        font-size: 28px;
+        font-weight: 500;
+        background-color: #3bc9db;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        border: none;
+        margin-top: 40px;
+      }
+
+      .btn-icon {
+        height: 44px;
+        stroke: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">
+        <p>ADD TO CART</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>

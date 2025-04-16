@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03 Button</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Noto Sans", "Times New Roman";
+        display: flex;
+      }
+      .container {
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+      .btn {
+        /* You can use stroke width for boldness of svg-icon stroke-width="3" */
+        height: 90px;
+        width: 380px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        font-size: 28px;
+        font-weight: 600;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .btn-icon {
+        height: 28px;
+        width: 28px;
+        padding-top: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">
+        <p>Get a Free consultation</p>
+        <div class="btn-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="3"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+  </body>
+</html>
