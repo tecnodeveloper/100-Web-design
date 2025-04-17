@@ -1,10 +1,4 @@
-# Web Design
-
-## Design of different component & layout of CSS
-
 # Omnifood
-
-## 08-Omnifood Desktop Project
 
 ## About Omnifood
 
@@ -132,4 +126,3 @@ Careers
 Recipe directory
 Help center
 Privacy & terms
-
