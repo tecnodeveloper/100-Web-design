@@ -14,41 +14,59 @@
         font-family: "Times New Roman", sans-serif;
         display: flex;
       }
-      /* .container {
-        width: 800px;
-        margin: 0 auto;
-        margin-top: 40px;
-      } */
-      /* .btn {
-        height: 80px;
-        width: 300px;
-        font-weight: 600;
-        font-size: 24px;
-        text-transform: uppercase;
-        line-height: 1.5;
-        background-color: #ffd8a8;
-        border-top: 18px;
-        border-bottom: 12px;
-        border-color: #000;
-        } */
+      .container {
+        width: 36rem;
+        height: 10rem;
+        background-color: #ffc9c9;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .icon {
+        color: #fff;
+        font-size: 2rem;
+      }
       .btn {
-        height: 80px;
-        width: 300px;
+        height: 4rem;
+        width: 18rem;
+        color: #fff;
+        background-color: #4dabf7;
+        border: 2px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .btn--width {
+        background-color: #ffc9c9;
+        width: 12rem;
+      }
+      .btn-txt {
         text-transform: uppercase;
         font-weight: 500;
-        font-size: 28px;
-        color: #000;
-        border-color: #000;
-        border-top: 18px;
-        border-bottom: 18px;
-        border-left: 32px;
-        border-right: 32px;
+        letter-spacing: -0.5px;
+        font-size: 1.2rem;
+        padding: 1.2rem;
       }
     </style>
   </head>
   <body>
-    <!-- <div class="container"> -->
-    <button class="btn">FloorPlans</button>
-    <!-- </div> -->
+    <div class="container">
+      <button class="btn">
+        <p class="btn-txt">SHOP Mattresses</p>
+        <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
+      </button>
+      <button class="btn btn--width">
+        <p class="btn-txt">Watch Video</p>
+      </button>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
