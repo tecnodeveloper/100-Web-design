@@ -1,0 +1,9 @@
+*{
+    background-image: url("/imageTree.jpg");
+}
+.halfBlack{
+    opacity: 50%;
+}
+#logoHeading{
+    margin-right: 20;
+}
