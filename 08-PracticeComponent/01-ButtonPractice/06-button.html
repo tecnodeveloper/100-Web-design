@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04 button</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Times New Roman", sans-serif;
+      }
+    
+      .container{
+        height: 10rem;
+        width: 30rem;
+        background-color: #aaa1a117;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.2rem;
+      }
+      .btn
+      {
+        height: 4rem;
+        width: 12rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fff;
+        border: none;
+        background-color: #f76707;
+        border-radius: 5px;
+      }
+      .btn-bg{
+        color: #000;
+        background-color: #fff;
+        border: 1px solid black;
+      }
+   </style>
+   <body>
+    <div class="container ">
+    <button class="btn ">
+      <p class="btn-txt">Try for free</p>
+    </button>
+    <button class="btn btn-bg">
+      <p class="btn-txt">See pricing</p>
+    </button>
+  </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
