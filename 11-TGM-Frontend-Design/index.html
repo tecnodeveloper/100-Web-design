@@ -28,23 +28,21 @@
                         <li class="nav-link">
                             <a href="#"
                                 ><img
-                                    src="/assests/img/image1"
+                                    src="/11-TGM-Frontend-Design/assests/img/image1"
                                     alt="Logo image of maison"
                                     class="img-logo"
                             /></a>
                         </li>
                         <li class="nav-link">
-                            <a href="#" class="search-icon-contain">
+                            <a href="#" class="search-icon-contain text-decoration-none">
                                 <input
                                     type="search"
                                     class="search-box"
                                     placeholder="Search designs and products"
                                 />
-                                <div
-                                    class="search-icon btn btn-outline-secondary "
-                                >
+                                <div class="search-icon-div d-flex justify-content-center align-items-center ">
                                     <i
-                                        class="fa-solid fa-magnifying-glass cart-icons"
+                                        class="fa-solid fa-magnifying-glass search-icons"
                                     ></i>
                                 </div>
                             </a>
@@ -66,9 +64,9 @@
                         </li>
                         <li>
                             <a href="#">
-                                <div class="cart-icon">
+                                <div class="cart-icon-container">
                                     <i
-                                        class="fa-solid fa-cart-shopping cart-icons"
+                                        class="fa-solid fa-cart-shopping cart-icons text-dark"
                                     ></i>
                                 </div>
                             </a>
@@ -80,42 +78,27 @@
                     <li class="nav-link">
                         <a href="#" class="py-3 px-2  text-decoration-none text-dark">Explore</a>
                     </li>
+                    <!-- DropDown link is copied from website -->
                     <li class="nav-link">
-                        <div class="dropdown">
-                            <button
-                                type="button"
-                                class="btn dropdown-toggle btn-nav p-3 text-dark"
-                                data-bs-toggle="dropdown"
-                            >
-                               Clothing
-                            </button>
-                            <ul class="dropdown-menu contain">
-                                <li>
-                                    <a href="#" class="dropdown-item"
-                                        >T-shirt</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item"
-                                        >Hoodies</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">Hats</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">Socks</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item"
-                                        >Dressing</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">Skirts</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="dropdown">
+                        <button data-mdb-button-init
+                          data-mdb-ripple-init data-mdb-dropdown-init class="btn p-3 dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-mdb-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Clothing
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+                          <li><a class="dropdown-item" href="#">Hoodies</a></li>
+                          <li><a class="dropdown-item" href="#">Hats</a></li>
+                          <li><a class="dropdown-item" href="#">Socks</a></li>
+                          <li><a class="dropdown-item" href="#">Dressing</a></li>
+                          <li><a class="dropdown-item" href="#">Skirts</a></li>
+                        </ul>
+                      </div>
                     </li>
                     <li class="nav-link">
                         <a href="#" class="p-3 text-dark text-decoration-none"
@@ -180,19 +163,19 @@
 
                 <div class="img-container">
                         <img
-                        src="/assests/img/image2"
+                        src="/11-TGM-Frontend-Design/assests/img/image2"
                         alt="Image of Brand girl "
                         class="girl-image"
                         />
                 
-                    <div class="card  card-container py-3">
-                        <div class="card-body change-direction ">
+                    <div class="card card-container ">
+                        <div class="py-3">
                         <h2 class="text-white mb-2 h1">Discover Unique Designs</h2>
                         <p class="text-white">Shop our latest artist-created products</p>
                         <button class="btn btn-primary text-white" type="button"> Buy Now</button>
-                        </div>
                     </div>
-            </div>
+                    </div>
+                </div>
             <div class="container">
                 <div class="d-flex justify-content-between mb-5">
                 <p class="h2 ">Clothing</p>
@@ -202,12 +185,12 @@
 
 
             <div class="swiping-container">
-                <ul class="">
+                <ul class="card-ul">
                     <li class=" card card-transform card-li">
-                        <img src="/assests/img/productImage.webp" alt="" class="card-img"  />
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
                         <div class="card-body">
-                                    <p class="mb-3 Tag-name">Classic T-Shirt</p>
-                                <div class="d-flex admin-update">
+                                    <p class="mb-3 tag-name">Classic T-Shirt</p>
+                                <div class="d-flex  align-items-center admin-update">
                                     <p class=" admin-font mb-2">By Admin Updated</p>
                                     <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
                                         <i class="fa-solid fa-check blue-tick-icon"></i>
@@ -223,14 +206,351 @@
                             </div>
                         </div>
                     </li>
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Vintage Hoodie</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $39.99</strong>
+                                    <p><span class="text-decoration-line-through">$49.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Denim Jacket</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $59.99</strong>
+                                    <p><span class="text-decoration-line-through">$74.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Floral Summer Dress</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $29.99</strong>
+                                    <p><span class="text-decoration-line-through">$37.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Slim Fit Jeans</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $49.99</strong>
+                                    <p><span class="text-decoration-line-through">$62.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Graphic Print T-Shirt</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $24.99</strong>
+                                    <p><span class="text-decoration-line-through">$31.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Knit Sweater</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $34.99</strong>
+                                    <p><span class="text-decoration-line-through">$43.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Cargo Pants</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $44.99</strong>
+                                    <p><span class="text-decoration-line-through">$56.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Leather Jacket</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $89.99</strong>
+                                    <p><span class="text-decoration-line-through">$112.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Leather Jacket</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $89.99</strong>
+                                    <p><span class="text-decoration-line-through">$112.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Leather Jacket</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $89.99</strong>
+                                    <p><span class="text-decoration-line-through">$112.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/productImage.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Polo Shirt</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $29.99</strong>
+                                    <p><span class="text-decoration-line-through">$37.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/product-card-image1.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Test Product Again</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $12.99</strong>
+                                    <p><span class="text-decoration-line-through">$15.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/product-card-image2.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Test Product Final</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $45.99</strong>
+                                    <p><span class="text-decoration-line-through">$56.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/product-card-image2.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Test Product with Sizes</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $45.99</strong>
+                                    <p><span class="text-decoration-line-through">$56.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+                    <li class=" card card-transform card-li">
+                        <img src="assests/img/product-card-image2.webp" alt="" class="card-img"  />
+                        <div class="card-body">
+                                    <p class="mb-3 tag-name">Test Product with size on live</p>
+                                <div class="d-flex  align-items-center admin-update">
+                                    <p class=" admin-font mb-2">By Admin Updated</p>
+                                    <div class="d-flex justify-content-center align-items-center blue-tick mb-2 ">
+                                        <i class="fa-solid fa-check blue-tick-icon"></i>
+                                    </div>
+                                </div>
+                            <div class="d-flex justify-content-start align-items-start price-tag">
+                                <div>
+                                    <strong class="final-price"> $49.99</strong>
+                                    <p><span class="text-decoration-line-through">$61.99</span>(20% off)</p>
+                                </div>
+                            <div class="add-cart d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-cart-shopping add-cart-icon"></i>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+                    <button class="left-icon btn" id="left-button">
+                        <i class="fa-solid fa-less-than"></i>                
+                    </button>
+                    <button class="right-icon btn" id = "right-button">
+                        <i class="fa-solid fa-greater-than"></i>
+                    </button>
             </ul>
-                <button class="left-icon" id="left-button">
-                    <i class="fa-solid fa-less-than"></i>                
-                </button>
-                <button class="right-icon" id = "right-button">
-                    <i class="fa-solid fa-greater-than"></i>
-                </button>
+             
             </div>
+
+
+            
+            
             </main>
             <footer></footer>
         </div>

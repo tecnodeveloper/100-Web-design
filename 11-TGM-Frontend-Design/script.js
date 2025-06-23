@@ -6,13 +6,13 @@ leftButton.addEventListener('click', leftFunction);
 rightButton.addEventListener('click', rightFunction);
 function leftFunction() {
     swipingCard.scrollTo({
-        left: swipingCard.scrollLeft - 300,
+        left: swipingCard.scrollLeft - 220,
         behavior: 'smooth',
     });
 }
 function rightFunction() {
     swipingCard.scrollTo({
-        left: rightButton.scrollLeft + 300,
+        left: swipingCard.scrollLeft + 220,
         behavior: 'smooth',
     });
 }
