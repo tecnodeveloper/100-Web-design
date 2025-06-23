@@ -1,6 +1,6 @@
 let leftButton = document.getElementById('left-button');
 let rightButton = document.getElementById('right-button');
-let swipingCard = document.querySelector('.swiping-container');
+let swipingCard = document.querySelector('.card-ul');
 
 leftButton.addEventListener('click', leftFunction);
 rightButton.addEventListener('click', rightFunction);

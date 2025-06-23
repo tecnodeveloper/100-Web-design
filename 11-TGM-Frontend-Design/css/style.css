@@ -78,21 +78,22 @@ body {
 /* ************** */
 
 .img-container {
-    width: 90vw;
-    height: 40rem;
+    width: 100vw;
+    height: 36rem;
     margin-bottom: 40px;
-    max-width: 90vw;
+    max-width: 100vw;
     overflow: hidden;
     position: relative;
 }
-
-.girl-image {
+.girl-main-image {
     position: absolute;
-    top: 30;
-    left: 0;
-    width: 100%;
+    top: -8%;
+    left: 6%;
     object-fit: cover;
     max-width: 100%;
+}
+.girl-image {
+    width: 100%;
 }
 
 .card-container {
@@ -114,13 +115,14 @@ body {
 /* ************** */
 .swiping-container {
     position: relative;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     max-width: 100%;
 }
 .card-ul {
     display: flex;
     gap: 18px;
     min-width: 100%;
+    overflow: auto;
 }
 .card-transform {
     width: 220px;
@@ -176,12 +178,14 @@ body {
 }
 
 .left-icon {
+    z-index: 1000;
     border: none;
     position: absolute;
     left: 0;
     top: 50%;
 }
 .right-icon {
+    z-index: 1000;
     border: none;
     position: absolute;
     right: 0;
