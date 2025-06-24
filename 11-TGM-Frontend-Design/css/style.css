@@ -116,6 +116,7 @@ body {
 .swiping-container {
     position: relative;
     /* overflow-x: auto; */
+    overflow-x: hidden;
     max-width: 100%;
 }
 .card-ul {
@@ -123,6 +124,7 @@ body {
     gap: 18px;
     min-width: 100%;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 .card-transform {
     width: 220px;
@@ -166,7 +168,7 @@ body {
     border-radius: 50%;
     border: 1px solid #cccccc !important;
     border-radius: 50%;
-    box-shadow: 1px 1px 1px #cccccc;
+    /* box-shadow: 1px 1px 1px #cccccc; */
 }
 .add-cart-icon {
     font-size: 12px;
